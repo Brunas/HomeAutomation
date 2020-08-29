@@ -33,7 +33,7 @@ Note: I needed to manually change IP address to 10.10.7.2, 255.0.0.0 with gatewa
 	2. URL: http://<*IP of your device*>:8081/zeroconf/info
 	3. Body: <code>{"data": {}}</code>
 	4. You might need to add Header **Content-Type** with value **application/json**
-	5. Press SEND
+	5. Press **SEND**
 	6. If all is OK, status code *200* should be returned with bunch of data:
 	<code>{
     "seq": 1,
@@ -57,7 +57,8 @@ Note: I needed to manually change IP address to 10.10.7.2, 255.0.0.0 with gatewa
 	2. URL: http://<*IP of your device*>:8081/zeroconf/ota_unlock
 	3. Body: <code>{"data": {}}</code>
 	4. You might need to add Header **Content-Type** with value **application/json**
-	5. Press SEND
+	5. Press **SEND**
 	6. You should get status code *200*
+	7. Optionally for curiousity you could retry *info* query to check if *otaUnlock* value now is *true*
 7. Sonoff's flashing tool should see your device now! 
-8. Since Tasmota binary names have changed, download Tasmota-lite.bin from https://github.com/arendst/Tasmota/releases and flash it according to instructions everywhere on the Internet.
+8. Since Tasmota binary names have changed, download Tasmota-lite.bin from https://github.com/arendst/Tasmota/releases and flash it according to instructions everywhere on the Internet. Just the WiFi AP name is **TASMOTA_XXXX** and not sonoff_XXX.
